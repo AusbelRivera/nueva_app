@@ -1,0 +1,58 @@
+body {
+
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: black !important;
+    height: 100vh;
+
+}
+
+.contenedor{
+
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #1693a5;
+    box-shadow: 2px 2px 35px #00ddff;
+    animation: glow 1s infinite ;
+
+}
+
+/*animacion*/
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #00ddff; /* Establece el resplandor inicial */
+    }
+    50% {
+      box-shadow: 0 0 15px #00ddff; /* Aumenta el resplandor a la mitad de la animación */
+    }
+    100% {
+      box-shadow: 0 0 5px #00ddff; /* Restaura el resplandor al final de la animación */
+    }
+  }
+/*animacion*/
+
+.contenedor_caja1{
+
+    position: relative;
+    top: 5vh;
+    left: 3vh;
+
+}
+
+.contenedor_caja1_input{
+
+    margin-top: 5px;
+    border-radius: 30px;
+    height: 30px ;
+    width: 50vh;
+    outline: none; /* Quita el contorno de enfoque */
+    border-color: #1693a5; /* Cambia el color del borde al enfocar */
+
+}
+
+
+
+
+
