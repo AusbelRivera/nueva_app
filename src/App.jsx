@@ -1,5 +1,5 @@
 import { Login } from "./Login"
-import "./App.css";
+import "./estilos/App.css";
 
 export function App(){
 

@@ -3,7 +3,7 @@ body {
     display: flex ;
     justify-content: center;
     align-items: center;
-    background-image:url(./img/fondo_login.webp);
+    background-image:url(../img/fondo_login.webp);
     height: 100vh;
 
 }
@@ -85,13 +85,16 @@ body {
 }
 .contenedor_boton1{
 
-  margin-right: 20px;
+  margin-right: 30%;
   font-size: 20px;
 
 }
 
 .contenedor_boton2{
 
+  position: relative;
+  top: -54px;
+  left: 50%;
 
   font-size: 20px;
 
