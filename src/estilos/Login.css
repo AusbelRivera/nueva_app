@@ -1,60 +1,68 @@
 body {
 
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    background-image:url(../img/fondo_login.webp);
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fondo_login.webp);
+  height: 100vh;
 
 }
 
-.contenedor{
+.contenedor {
 
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
-    background-color: #1693a5;
-    box-shadow: 2px 2px 35px #00ddff;
-    opacity: 0.7;
-    animation: glow 1s infinite ;
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #1693a5;
+  box-shadow: 2px 2px 35px #00ddff;
+  opacity: 0.7;
+  animation: glow 1s infinite;
 
 
 }
 
 /*animacion*/
 @keyframes glow {
-    0% {
-      box-shadow: 0 0 5px #00ddff; /* Establece el resplandor inicial */
-    }
-    50% {
-      box-shadow: 0 0 15px #00ddff; /* Aumenta el resplandor a la mitad de la animación */
-    }
-    100% {
-      box-shadow: 0 0 5px #00ddff; /* Restaura el resplandor al final de la animación */
-    }
+  0% {
+    box-shadow: 0 0 5px #00ddff;
+    /* Establece el resplandor inicial */
   }
+
+  50% {
+    box-shadow: 0 0 15px #00ddff;
+    /* Aumenta el resplandor a la mitad de la animación */
+  }
+
+  100% {
+    box-shadow: 0 0 5px #00ddff;
+    /* Restaura el resplandor al final de la animación */
+  }
+}
+
 /*animacion*/
 
-.contenedor_caja1{
+.contenedor_caja1 {
 
-    position: relative;
-    top: 5vh;
-    left: 3vh;
-
-}
-
-.contenedor_caja1_input{
-
-    margin-top: 5px;
-    border-radius: 30px;
-    height: 30px ;
-    width: 90%;
-    outline: none; /* Quita el contorno de enfoque */
-    border-color: #1693a5; /* Cambia el color del borde al enfocar */
+  position: relative;
+  top: 5vh;
+  left: 3vh;
 
 }
 
-.contenedor_caja2{
+.contenedor_caja1_input {
+
+  margin-top: 5px;
+  border-radius: 30px;
+  height: 30px;
+  width: 90%;
+  outline: none;
+  /* Quita el contorno de enfoque */
+  border-color: #1693a5;
+  /* Cambia el color del borde al enfocar */
+
+}
+
+.contenedor_caja2 {
 
   position: relative;
   top: 7vh;
@@ -62,45 +70,43 @@ body {
 
 }
 
-.contenedor_caja2_input{
+.contenedor_caja2_input {
 
   margin-top: 5px;
   border-radius: 30px;
-  height: 30px ;
+  height: 30px;
   width: 90%;
-  outline: none; /* Quita el contorno de enfoque */
-  border-color: #1693a5; /* Cambia el color del borde al enfocar */
+  outline: none;
+  /* Quita el contorno de enfoque */
+  border-color: #1693a5;
+  /* Cambia el color del borde al enfocar */
 
 }
 
-.contenedor_botones{
+.contenedor_botones {
 
   position: relative;
   display: flex;
   justify-content: center;
-  top:70px;
+  top: 70px;
   width: 100%;
   background-color: black;
 
 }
-.contenedor_boton1{
 
-  margin-right: 30%;
+.contenedor_boton1 {
+
+  margin-right: 150px;
   font-size: 20px;
 
 }
 
-.contenedor_boton2{
+.contenedor_boton2 {
 
   position: relative;
-  top: -54px;
-  left: 50%;
-
+  bottom: 54px;
+  left: 51%;
   font-size: 20px;
 
+
 }
-
-
-
-
-
