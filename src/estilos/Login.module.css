@@ -1,4 +1,13 @@
-body {
+body, html {
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.fondo{
 
   display: flex;
   justify-content: center;
@@ -9,6 +18,8 @@ body {
 }
 
 .contenedor {
+
+  
 
   width: 400px;
   height: 250px;
@@ -104,9 +115,11 @@ body {
 .contenedor_boton2 {
 
   position: relative;
-  bottom: 54px;
-  left: 51%;
+  bottom: -86px;
+  left: -14%;
   font-size: 20px;
+  opacity: 0.9;
+
 
 
 }

@@ -1,42 +1,45 @@
-import './estilos/Login.css'
+import styles from './estilos/Login.module.css'
+import { Link, useNavigate } from 'react-router-dom';
+
 
 export function Login() {
 
-    const RegistrarUsuario = () => {
+    const navigate = useNavigate();
 
-        window.open('https://www.facebook.com', '_blank', 'width=600,height=400');
-
+    const registrarUsuario = () => {
+       navigate("/registro"); // Redirige al usuario a la ruta '/menu'
     };
 
     return (
 
-        <>
-            <form action='' className="contenedor">
+        <div className={styles.fondo}>
+            <form action='' className={styles.contenedor}>
 
-                <div className='contenedor_caja1'>
+                <div className={styles.contenedor_caja1}>
 
-                    <h2 className='contenedor_caja1_h2'>Ingresa tu usuario:</h2>
+                    <h2 className={styles.contenedor_caja1_h2}>Ingresa tu usuario:</h2>
 
-                    <input type="text" placeholder='nombre de usuario' className='contenedor_caja1_input' />
-
-                </div>
-
-                <div className='contenedor_caja2'>
-
-                    <h2 className='contenedor_caja2_h2'>Ingresa tu Contraseña:</h2>
-
-                    <input type="password" placeholder='Contraseña' className='contenedor_caja2_input' />
+                    <input type="text" placeholder='nombre de usuario' className={styles.contenedor_caja1_input} />
 
                 </div>
 
-                <div className='contenedor_botones'>
-                    <button className='contenedor_boton1' >Ingresar</button>
+                <div className={styles.contenedor_caja2}>
+
+                    <h2 className={styles.contenedor_caja2_h2}>Ingresa tu Contraseña:</h2>
+
+                    <input type="password" placeholder='Contraseña' className={styles.contenedor_caja2_input} />
+
+                </div>
+
+                <div className={styles.contenedor_botones}>
+                    <button className={styles.contenedor_boton1} >Ingresar</button>
                 </div>
 
             </form>
 
-            <button className='contenedor_boton2' onClick={RegistrarUsuario}>Registrar</button>
-        </>
+            <button className={styles.contenedor_boton2} onClick={registrarUsuario}>Registrar</button>
+
+        </div>
 
 
 
