@@ -5,6 +5,7 @@ import imagen from '../img/usuario.png'
 
 export function MenuLateral() {
 
+
     return (
 
         <div className={styles.lateral}>
@@ -17,17 +18,20 @@ export function MenuLateral() {
 
             <div className={styles.lateral_listas}>
 
-                <li className={styles.lateral_lista}>
-                    <Link to="" >Clientes</Link>
-                </li>
+                
 
-                <li className={styles.lateral_lista}>
-                    <Link to="" >Registrar</Link>
-                </li>
+                    <li className={styles.lateral_lista}>
+                        <Link to="" >Clientes</Link>
+                    </li>
 
-                <li className={styles.lateral_lista}>
-                    <Link to="/Login" >Salir</Link>
-                </li>
+                    <li className={styles.lateral_lista}>
+                        <Link to="" >Registrar</Link>
+                    </li>
+
+                    <li className={styles.lateral_lista} >
+                        <Link to="/Login" >Salir</Link>
+                    </li>
+
 
             </div>
 
