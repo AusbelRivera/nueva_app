@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { Login } from "./Login";
 import { Registro } from "./Registro";
 import { MenuLateral } from "./reutilizable/menu_lateral";
+import { VerTrabajadores } from "./VerTrabajadores";
+
 
 export function App() {
 
@@ -19,6 +21,9 @@ export function App() {
                 <Route path="/menu" element={<MenuLateral />} />
 
                 <Route path="/registro" element={<Registro />} />
+
+                <Route path="/vertrabajadores" element={<VerTrabajadores />} />
+               
 
 
             </Routes>
